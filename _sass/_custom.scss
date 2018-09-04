@@ -1,0 +1,841 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+
+//Global CSS 
+.row{
+    overflow: hidden;
+}
+
+.navbar-light{
+	.navbar-nav{
+		.nav-link{
+			color: #000000;
+
+		@include media-breakpoint-up(md){
+			@media (pointer:'fine') and (hover:'hover')		{
+					opacity: .7;
+					transition: all .5s;
+					&:hover{
+						opacity: 1;
+						transform: scale(1.05);
+					}
+				}
+			}
+
+		}
+	
+	}	
+	
+}
+
+
+
+.navbar{
+	background-color: #ffffff;
+}
+
+.navbar-brand{
+    
+    img{
+        width: 30px;
+    }
+}
+
+.sm-icons{
+    color: #eeeee0;
+}
+
+.navbar-brand { 
+	img,
+	.fa-facebook,
+	.fa-instagram{
+		 color: #02032D;
+		transition: all .5s;
+
+		&:hover{
+			opacity:.5;
+		}
+		
+	}
+
+}
+
+.navbar-toggler{
+	&:focus,
+	&:active:focus{
+		outline: none;
+		text-decoration: none;
+	}
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: #011d44;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+	color: 	#808080;
+}
+
+a{
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+//Padding and viewport height of most pages.  Some pages require overides
+.hero{
+      	height: 800px;
+		
+		  @media (pointer: coarse),(any-hover: on-demand)	{
+			  
+				height: 100vh;
+
+			} 
+	
+		@include media-breakpoint-up(sm) { 
+			height: 500px; 
+  		
+			@media (pointer: coarse),(any-hover: on-demand)	{
+			  
+				height: 100vh;
+
+			} 
+		}
+	
+
+	   @include media-breakpoint-up(md){
+			height: 80vh;
+		   
+		   @media screen and (orientation: portrait){
+			   
+			   @media (pointer: coarse),(any-hover: on-demand){
+				height: 80vh;
+				  
+					
+				}   
+		   }
+				
+		}
+		
+		@include media-breakpoint-up(lg){
+				height:130vh;
+			
+			@media screen and (orientation: portrait){
+			   
+			   @media (pointer: coarse),(any-hover: on-demand){
+					height: 80vh;
+				  
+				}   
+		   }
+			
+		}
+	
+		@include media-breakpoint-up(xl){
+			height:150vh;
+			
+			@media screen and (orientation: portrait){
+			   
+			   @media (pointer: coarse),(any-hover: on-demand){
+					height: 80vh;
+				  
+				}   
+		   }
+			
+		}
+		
+        
+	}
+
+
+
+//End Globall CSS
+
+
+
+.home-page{
+      
+	#scrolling{
+		
+
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		z-index: -1;
+		margin: 0;
+		padding: 0;
+		
+		
+			background:linear-gradient(rgba(1,29,68,.4),rgba(1,29,68,.4)), url('../img/background/Home%20Background%20MP.jpg')no-repeat center top fixed;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        background-size:100%;
+        -o-background-size: 100%; 
+        
+        @include media-breakpoint-up(sm){
+            background: linear-gradient(rgba(1,29,68,.4),rgba(1,29,68,.4)),url('../img/background/Home%20Background%20LG.jpg')no-repeat center top fixed;
+            -webkit-background-size: 100%;
+            -moz-background-size: 100%;
+            background-size:100%;
+            -o-background-size: 100%; 
+            
+        }
+
+		@include media_breakpoint-up(md){
+			background: linear-gradient(rgba(1,29,68,.4),rgba(1,29,68,.4)),url('../img/background/Home%20Background%20LG.jpg')no-repeat center top;
+			-webkit-background-size: 100% auto;
+			-moz-background-size: 100% auto;
+			background-size:100% auto;
+			-o-background-size: 100% auto;
+
+			@media (pointer: coarse),(any-hover: on-demand){
+				-webkit-background-size: 130%;
+				-moz-background-size: 130%;
+				background-size:130%;
+				-o-background-size: 130%;
+			}
+		}
+		
+	}
+	
+
+	.hero{
+		
+			.hero-height{
+				
+				height: 800px;
+
+				  @media (pointer: coarse),(any-hover: on-demand)	{
+
+						height: 100vh;
+
+					} 
+
+				@include media-breakpoint-up(sm) { 
+					height: 500px; 
+
+					@media (pointer: coarse),(any-hover: on-demand)	{
+
+						height: 100vh;
+
+					} 
+				}
+
+
+			   @include media-breakpoint-up(md){
+					height: 80vh;
+
+				   @media screen and (orientation: portrait){
+
+					   @media (pointer: coarse),(any-hover: on-demand){
+						height: 80vh;
+
+
+						}   
+				   }
+
+				}
+				
+					@include media-breakpoint-up(lg){
+						height:100vh;
+
+					@media screen and (orientation: portrait){
+
+					   @media (pointer: coarse),(any-hover: on-demand){
+							height: 100vh;
+
+						}   
+				   }
+
+				}
+
+				@include media-breakpoint-up(xl){
+					height:100vh;
+
+					@media screen and (orientation: portrait){
+
+					   @media (pointer: coarse),(any-hover: on-demand){
+							height: 100vh;
+
+						}   
+				   }
+
+				}
+
+				img{
+					width: 150px;
+
+					@include media-breakpoint-up(md){
+						width: 250px;
+					}
+				}
+
+				h1{
+					font-weight: 300;
+					color: #eeeee0; 
+					text-transform: uppercase;
+					font-size: 30px;
+
+					@include media-breakpoint-up(md){
+						font-size: 40px;
+					}
+				}
+			}
+            
+		}
+    
+   
+    
+    .about{
+		
+		.headline{
+			hr{
+				border: .5px solid #000000;
+				max-width: 300px;
+			}
+			
+			h2{
+				font-weight: 300;
+			}
+			
+		}
+		
+		background-color: #ffffff;
+		
+		min-height: 100vh;
+
+		.title{
+			h2{
+				font-weight: 400;
+			}
+
+			p{
+				color: #000000;
+				font-size: 24px;
+			}
+			
+			hr{
+				max-width: 300px;
+				border: 1px solid #000000;
+				margin: 0;
+
+			}
+
+		}
+		
+		p{
+			font-size: 16px;
+			
+			span{
+				color: #000000;
+				font-weight: 600;
+				font-size: 20px;
+			}
+		}
+    
+
+		.btn-outline-dark{
+			border-radius: 0px;
+			border: 3px solid #000000;
+			
+			&:hover{
+				background-color: #000000;
+			}
+		}
+		
+		.line-space{
+			line-height: 30px;
+		}
+		
+		
+		#instafeed{
+			
+
+            .insta-widget{
+
+                position: relative;
+                
+                 img{
+                    border-radius: 10px;
+					 width: 400px;
+                }
+                .ig-hover{
+                    opacity:1;
+                    transition: opacity 1s;
+
+                }
+    
+                   .likes{
+                    max-width: 100%;
+                    height: 100%;
+
+                        .likes-box{
+                            background-color: rgba(255,255,255,.7);
+                            margin: auto;
+                            position: absolute;
+                            overflow: hidden;
+                            height:  50px;
+                            max-width: 400px;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            border-radius: 0 0 10px 10px;
+
+
+                            .profile{
+                                display: inline-block;
+                                margin: 0 5px;
+                                height: 30px;
+                                width: 30px;
+                                border-radius: 100%;
+
+                            }
+                            .fa-heart{
+                                color: #fb3958; 
+                                margin: 0 5px;
+                            }
+
+                            .fa-comment{
+                                color: #16ceee;
+                                margin: 0 5px;
+                            }
+
+                            p{
+                                font-size: 18px;
+                            }
+
+						  	p.caption{
+                              	display: none;
+
+                            }
+                        }
+
+
+                    }
+
+                @media (pointer: fine) and (hover: hover){
+
+                    position: inherit;
+                    
+                    .likes{
+                        width: 100%;
+                        height: 100%;
+                        opacity:0;
+                        transition: opacity 1s;
+
+
+                        .likes-box{
+                            background-color: rgba(255,255,255,.1);
+                            margin: auto;
+                            position: absolute;
+                            height:100%;
+                            max-width: 400px;
+							padding: 10px 20px;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+						
+
+                            .profile{
+                                display: block;
+                                margin-left: 0;
+                                height: 30px;
+                                width: 30px;
+                                border-radius: 100%;
+
+                            }
+                            .fa-heart{
+                                color: #fb3958;
+                                margin: 0 5px;
+
+                            }
+
+                            .fa-comment{
+                                color: #16ceee;
+                                margin: 0 5px;
+                            }
+
+                            p{
+                                font-size: 20px;
+
+                            }
+
+                            p.caption{
+                                display: block;
+                                font-size: 16px;
+                                text-align: left;
+								color: #000000;
+								padding: 0 10px;
+
+                            }
+                        }
+
+                    }
+				
+					
+					
+                      &:hover{
+                        .ig-hover{
+                            opacity:0.2;
+
+                        }
+
+                        .likes{
+                            opacity: 1;
+
+                        }
+                    }
+
+
+                }
+            }
+        
+        }
+		
+	
+		
+			
+		
+    }
+	
+  	.services{
+		background-color: #F5F5F5;
+		
+		.title{
+			h2{
+				font-weight: 400;
+			}
+
+		
+
+		}
+		
+		h3{
+			font-weight: 600;
+		}
+	
+		
+        img{
+            width: 150px;
+        }
+        
+        
+		p{
+			color: 	#808080;
+			font-size: 16px;
+		}
+
+        @include media_breakpoint-up(md){
+			min-height: 100vh;
+		}
+  
+    }
+	
+	.images{
+		
+		div{
+			padding: 0;
+		}
+		
+		 /*  height: 500px;
+		
+		 @media (pointer: coarse),(any-hover: on-demand)	{
+			  
+				height: 70vh;
+
+			} 
+		 
+			
+		
+		@include media-breakpoint-up(sm){ 
+			
+			height: 400px; 
+			
+		}
+	
+		
+	   @include media-breakpoint-up(md){
+			height: 50vh;
+		   	
+			
+		   @media screen and (orientation: portrait){
+			   
+			   @media (pointer: coarse),(any-hover: on-demand){
+					height: 60vh;
+
+				}   
+		   }
+		   
+		   @media screen and (orientation: landscape){
+			   
+			   @media (pointer: coarse),(any-hover: on-demand){
+					height: 70vh;
+				  				
+				}   
+		   }
+				
+		}
+		
+		@include media-breakpoint-up(lg){
+				height: 100vh;
+			
+			@media screen and (orientation: portrait){
+			   
+			   @media (pointer: coarse),(any-hover: on-demand){
+					height: 50vh;
+				   padding: 200px 0;
+				}   
+		   }
+			
+			@media screen and (orientation: landscape){
+			   
+			   @media (pointer: coarse),(any-hover: on-demand){
+					height: 100vh;
+				  				
+				}   
+		   }
+			
+		}
+
+		
+		
+        background:linear-gradient(rgba(1,29,68,.4),rgba(1,29,68,.4)), url('../img/background/Home Background 2 MP.jpg')no-repeat center top;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        background-size:100%;
+        -o-background-size: 100%; 
+        
+        @include media-breakpoint-up(sm){
+            background: linear-gradient(rgba(1,29,68,.4),rgba(1,29,68,.4)),url('../img/background/Home Background 2 ML.jpg')no-repeat center top;
+            -webkit-background-size: 100%;
+            -moz-background-size: 100%;
+            background-size:100%;
+            -o-background-size: 100%; 
+            
+        }
+
+		@include media_breakpoint-up(md){
+			background: linear-gradient(rgba(1,29,68,.4),rgba(1,29,68,.4)),url('../img/background/Home Background 2 LG.jpg')no-repeat center top;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size:cover;
+			-o-background-size: cover;
+
+			@media (pointer: coarse),(any-hover: on-demand){
+				-webkit-background-size: 130%;
+				-moz-background-size: 130%;
+				background-size:130%;
+				-o-background-size: 130%;
+			}
+		}
+		  */ 
+	}
+
+ 
+	.clients{
+		background-color: #ffffff;
+		
+		
+			
+	.title{
+	
+		
+			h2{
+				font-weight: 400;
+			}
+
+		}
+
+		
+		img{
+			
+			width: 200px;
+			
+			z-index: -1;
+			opacity: .7;
+			transition: all 1s;
+			
+			&:hover{
+				transform: scale(1.1);
+				opacity: 1;
+			
+			}
+		}
+	}
+	
+	.video{
+		.mobile{
+			display: none;
+		}
+		
+		.desktop{
+			overflow: hidden;
+		}
+		background-color: #F5F5F5;
+		min-height: 400px;
+		
+		.title{
+	
+		
+			h2{
+				font-weight: 400;
+			}
+
+			p{
+				color: #000000;
+				font-size: 24px;
+			}
+			
+			hr{
+				max-width: 200px;
+				border: 1px solid #000000;
+				margin: 0 auto;
+			}
+
+		}
+		
+		
+		.text-overlay{
+			position: absolute;
+			right: 0;
+   			left: 0;
+			
+			
+		}
+		
+		i{
+			opacity: .3;
+			color: #368BC1;
+			transition: all 1s;
+			
+			
+			&:hover{
+				transform: scale(1.1);
+				opacity: 1;
+				color: #368BC1;
+				}
+			}
+		
+		a{
+			&:focus,
+			&:active:focus{
+				outline: none;
+				text-decoration: none;
+			}
+		}
+		
+		.modal-dialog {
+		  max-width: 800px;
+		  margin: 30px auto;
+			  }
+
+			.modal-body {
+			  position:relative;
+			  padding:0px;
+			}
+			.close {
+			  position:absolute;
+			  right:-30px;
+			  top:0;
+			  z-index:999;
+			  font-size:2rem;
+			  font-weight: normal;
+			  color:#fff;
+			  opacity:1;
+			}
+
+		
+		
+		@media (pointer: coarse),(any-hover: on-demand){
+		
+			.mobile{
+				display: block;
+				
+				i{
+					opacity: 1;
+				}
+			}
+
+			.desktop{
+				display: none;
+			}
+		}
+	}
+	
+	
+	
+}
+
+footer{
+    background: #01022f;
+    
+	img{
+		width: 100px;
+	}
+	
+	h4,
+	p,
+	a{
+		color: #eeeee0;
+	}
+
+	 p{
+		 font-size: 12px;
+	 }
+
+	 a{
+		 &:hover{
+			 text-decoration: none;
+			 color: rgba(238,238,224,.7);
+
+			 .fa-envelope,
+			 .fa-comment,
+			 .fa-facebook,
+			 .fa-instagram{
+				 opacity:.7;
+				 }
+		 }
+	 }
+}
+
+.confirmation{
+    background: url('../img/background/cover-img-landscape.jpg')no-repeat center top fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size:cover;
+        -o-background-size: cover; 
+    
+    img{
+        width: 300px;
+    }
+    
+    p,
+    a{
+        color: #eeeee0;
+    }
+}
+
+.contact{
+    img{
+        width: 100px;
+    }
+}
+
+.not-found{
+	height: 100vh;
+}
