@@ -131,7 +131,7 @@ function windowSize(){
 function scroll(){
 	scrollPosition = window.pageYOffset;
 	
-	if (scrollPosition <= heroHieght - extraHeight) {
+	if (scrollPosition <= extraHeight * lag) {
 		scrolling.style.top = -scrollPosition/lag + "px";
 	}
 };
